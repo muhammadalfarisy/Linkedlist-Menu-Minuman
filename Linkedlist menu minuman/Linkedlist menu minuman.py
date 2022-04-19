@@ -1,7 +1,7 @@
 import os
 import sys
 
-import sys #this allows you to use the sys.exit command to quit/logout of the application
+import sys
 def main():
     login()
     
@@ -20,16 +20,16 @@ def login():
         print("Try again")
         login()
 
-class Menu_minuman: #Class ibarat ruangan, dan Menu_minuman ibarat isi dari kelas
+class Menu_minuman:
         Jenis_minuman=''
         Nama_minuman=''
         Harga_minuman=''
 
-pilih = 0 #Dibuat 0 karena nanti kita akan mengisi angka nya melalui aplikasi
+pilih = 0
 Daftarminuman = []
 
 def menu():
-	print("Menu Aplikasi Daftar Minuman LinkedList python"); 
+	print("Menu Daftar Minuman Python"); 
 	print("-------------------------------------------")
 	print("1. Input Daftar Menu Minuman")
 	print("2. Tampilkan Daftar Menu Minuman")
@@ -43,8 +43,8 @@ def menu():
 		menu()
 	
 	elif pilih == 2:
-		tampil() #Menampilkan menu yang ada dengan memasukan funtion tampil
-		input("kembali menu utama") #
+		tampil()
+		input("kembali menu utama") 
 		menu() 
   
 	elif pilih == 3:
@@ -56,7 +56,7 @@ def menu():
 			if id_edit == Daftarminuman[a].Jenis_minuman: 
 					index_update = a
 					break 
-		if(index_update > -1): #Lebih besar dari min 1 , maka masuk ke bari 40. 0 setelah index_update awalnya -1, ini itu nilai bantu untuk 
+		if(index_update > -1):
 			print("INPUT DATA YANG DI UPATE ") 
 			pilihan_minuman = Menu_minuman()
 			pilihan_minuman.Jenis_minuman = (input("masukkan jenis minuman : "))
